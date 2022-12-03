@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/21 19:55:45.000.086,=C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/10/18 01:01:07.000.717,=C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/01 13:14:04.000.301,=C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/13 22:26:09.000.835,=C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/13 23:15:35.000.910,C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\geophoto-locater\Unit1.pas</Transaction>
+    <Transaction>2021/02/13 23:15:35.000.910,C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\geophoto-locater\Unit1.fmx</Transaction>
+    <Transaction>2021/02/13 23:15:37.000.361,C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Shami Rapudi\Documents\Embarcadero\Studio\Projects\geophoto-locater\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android64="" Android="" iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

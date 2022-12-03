@@ -1,0 +1,176 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 414
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Button1: TButton
+    Align = Top
+    Position.Y = 225.000000000000000000
+    Size.Width = 414.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'CAPTURE'
+    Visible = False
+    OnClick = Button1Click
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Top
+    Size.Width = 414.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object CameraComponent1: TCameraComponent
+    Left = 232
+    Top = 160
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 414.000000000000000000
+    Size.Height = 167.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 7
+    TabPosition = Bottom
+    Sizes = (
+      414s
+      118s
+      414s
+      118s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 207.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'DETAIL'
+      ExplicitSize.cx = 207.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Label1: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+      end
+      object Label10: TLabel
+        Position.X = 288.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 82.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+      object Label2: TLabel
+        Position.X = 24.000000000000000000
+        Position.Y = 48.000000000000000000
+        TabOrder = 2
+      end
+      object Label3: TLabel
+        Position.X = 24.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 106.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+      end
+      object Label5: TLabel
+        Position.X = 160.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 4
+      end
+      object Label6: TLabel
+        Position.X = 160.000000000000000000
+        Position.Y = 40.000000000000000000
+        TabOrder = 5
+      end
+      object Label7: TLabel
+        Position.X = 160.000000000000000000
+        Position.Y = 72.000000000000000000
+        TabOrder = 6
+      end
+      object Label8: TLabel
+        Position.X = 168.000000000000000000
+        Position.Y = 104.000000000000000000
+        TabOrder = 7
+      end
+      object Label9: TLabel
+        Position.X = 296.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 8
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 207.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'MAP'
+      ExplicitSize.cx = 207.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object WebBrowser1: TWebBrowser
+        Align = Client
+        Size.Width = 414.000000000000000000
+        Size.Height = 118.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Button2: TButton
+    Action = TakePhotoFromCameraAction1
+    Align = Top
+    Enabled = True
+    ImageIndex = -1
+    Position.Y = 225.000000000000000000
+    Size.Width = 414.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Camera'
+  end
+  object Button3: TButton
+    Action = TakePhotoFromLibraryAction1
+    Align = Top
+    Enabled = True
+    ImageIndex = -1
+    Position.Y = 269.000000000000000000
+    Size.Width = 414.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = 'Open Gallery'
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 344
+    Top = 160
+  end
+  object ActionList1: TActionList
+    Left = 88
+    Top = 327
+    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromCameraAction1DidFinishTaking
+    end
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+  end
+end
